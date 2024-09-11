@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Success!</title>
+</head>
+<body>
+  <h1>Payment Successful</h1>
+  <h2>Transaction Details</h2>
+  <ul>
+    <li>Transaction ID: <%= transaction.id %></li>
+    <li>Amount: <% transaction.amount %></li>
+    <li>Paid: <% transaction.amount-paid %></li>
+    <li>Time: <% transaction.time %></li>
+  </ul>
+</body>
+</html>

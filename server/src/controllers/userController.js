@@ -2,6 +2,8 @@ const { User } = require("../models/UserM")
 const { Order } = require('../models/order');
 const jwt = require("jsonwebtoken")
 const config = require("../config/config")
+const { signUpVal } = require("../middlewares/miware")
+const bcrypt = require("bcrypt")
 
 function jwtSignUser(user){
       const TWO_HOURS = 7200
@@ -26,9 +28,12 @@ function jwtSignUser(user){
 
   async signup(req, res){
     try {
+      await signUpVal(req, res, async () => {
+        //call signupval mw
       const user = await User.create(req.body)
       const userObject = user.toJSON();
       return res.send({ user: userObject, token: jwtSignUser(userObject) })
+    })
     } catch (error){
       console.log(error)
       if (Object.keys(Object.keys(error.keyValue[2] === "email") )){

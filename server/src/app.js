@@ -15,7 +15,7 @@ const { isAuthenticated, signUpVal } = require("./middlewares/miware");
 const app = express();
 app.use(cors());
 app.use(morgan('dev'))
-app.use(express.urlencoded { extended: true})
+app.use(express.urlencoded({ extended: true }));
 app.use("./services/passport")
 
 mongoose.connect(db.mongoURI, {
@@ -68,9 +68,10 @@ app.get('/order', function(req, res) {
 
 app.post('/payment', function(req, res) {
   fs.readFile('items.json', function(error, data) {
-
+    // let x;
+  })
 })
 
 app.listen(3000)
 
-module.exports = app;
+module.exports = app

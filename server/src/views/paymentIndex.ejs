@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braintree Gateway Dropin</title>
+</head>
+<body>
+  <h1></h1>
+  <form action= action="/checkout" method="post" id="checkout-form">
+<div id="info-dropin-container"></div>
+<input type="submit" value="Pay Amount">
+
+  </form>
+  <script src="https://js.braintreegateway.com/web/dropin/1.30.1/js/dropin.min.js"></script>
+  <script>
+    let form = document.getElementById("checkout-form");
+    let client_token;
+
+    fetch("/client_token")
+      .then(function(response){
+        return response.text();
+      })
+      .then(function(token){
+        client_token = token;
+        return braintree.dropin.create({
+          authorization: client_token, container: '#info-dropin-container'
+        });
+      })
+      .then(function(instance){
+        form.addEventListener('submit', function(event){
+          event.preventDefault();
+
+          //gets nonce paayload
+          instance.requestPaymentMethod(function(erro, payload){
+            if (err) {
+              console.error('Error', erro);
+              return;
+            }
+
+            // Add the payment method nonce to the form data
+            let secretInput = document.createElement("input");
+            secretInput.setAttribute('type', 'hidden');
+            secretInput.setAttribute('name', 'payment.method.nonce');
+            secretInput.setAttribute('value', 'payload.nonce');
+            form.appendChild(secretInput);
+
+            form.submit();
+          });
+        });
+      })
+      .catch(function(err){
+        console.error("Error:", err)
+      })
+  </script>
+
+</body>
+</html>
