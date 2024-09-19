@@ -14,7 +14,7 @@ Collaboratrs:
 * Doreen Ikilai
 * Ifeoluwa Adebayo
 * Favour
-* Wassim Haimoudi
+* WASSIM HAIMOUDI
 Related Projects: Secondary GH Repo https://github.com/OluwaseunAI/zuri-shoe-project
 https://github.com/ZeroAddict/Ese-Bata-landing/
 
