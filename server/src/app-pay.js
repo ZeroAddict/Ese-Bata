@@ -2,13 +2,28 @@ const app = require("./app");
 const express = require('express');
 const bodyParser = require('body-parser');
 const braintree = require('braintree');
-
 const path = require("path");
 const app = express();
+app.use(express.static(__dirname + "/public"))
+
 const cors = require("cors");
+app.set("views", path.join(__dirname, views))
 app.set("view-engine", ejs);
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
 app.use(cors());
+
+const mongoose = require('mongoose');
+
+mongoose.connect( DB.connection, { useNewUrlParser: true})
+.then(connection => {console.log("Connected to Database")}).catch(error => {
+  console.log({
+    error :{
+      name: error.name, message: error.message,
+      errorCode: error.code, codeName: error.codeName
+    }
+  })
+})
 
 const gateway = new braintree.BraintreeGateway({
   environment: ,

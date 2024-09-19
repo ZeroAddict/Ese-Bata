@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import {} from './config'
+const paymentData = require('./credentials');
 
 const connectDB = async () =>{
   try {
@@ -9,3 +10,5 @@ const connectDB = async () =>{
 
   }
 }
+
+
