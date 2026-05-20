@@ -1,30 +1,108 @@
-<img width="162" alt="scr3" src="https://github.com/user-attachments/assets/2ac62ae8-18cb-4ca7-a85a-79233bfa46c6">
-<img width="162" alt="scr2" src="https://github.com/user-attachments/assets/ab017f33-1d10-409a-a223-54e58e7fc98f">
-<img width="207" alt="scr1" src="https://github.com/user-attachments/assets/bc4d3175-3eee-4d4a-ba2d-1cbf2166c36c">
-# Graceful shoes: A portfoliio project
-An e-commerce backend project. The beginning
-ESE BATA: Where matchless craftmanship meets graceful feet.)
+# Ese Bata – E-Commerce Shoe Backend
 
-https://www.linkedin.com/posts/olayemi-adekogbe_ese-bata-where-matchless-craftmanship-meets-activity-7242337829517725696-qE5a?utm_source=share&utm_medium=member_desktop
-https://www.linkedin.com/in/olayemi-adekogbe
-INSTALLATION: * Download and Install Node, a suitable code editor...
-Check Package.json for a list of dependencies. Run npm "replaceWithDependencyName"
-For an eCommerce shoe backend server
-Collaboratrs:
-* Doreen Ikilai
-* Ifeoluwa Adebayo
-* Favour
-* WASSIM HAIMOUDI
-Related Projects: Secondary GH Repo https://github.com/OluwaseunAI/zuri-shoe-project
-https://github.com/ZeroAddict/Ese-Bata-landing/
+**Where matchless craftsmanship meets graceful feet.**
 
-![alt text](image-1.png)
-![alt text](image.png)
+> A portfolio project demonstrating full-stack product thinking: from PRD to shipped backend with authentication, CRUD operations, and MVC architecture.
 
-I utilized Express, MongoDB, EJs within a NodeJS runtime server environment. Additionally, other libraries and frameworks were integrated to implement the Models-Views-Controllers (MVC) architecture. To ensure the project's success, thorough research and planning were conducted to identify technologies and algorithms best suited for the task at hand. Building on my existing NodeJS knowledge presented an unmistakeable choice, allowing me to expand my skills and expertise while cementing the little I know as I grow.
-⦁	Users can login and or sign up through functional routes and control handlers when the endpoints are invoked, this was made possible by the Express framework.
-⦁	User data and Product data can securely be stored, retrieved, modified and deleted using the MongoDB as a document-oriented database (NoSQL).
-The choice of NodeJS allowed me run Javascript code seamlessly and with asynchronous execution on the server-side, anchored on its single-threaded, event-driven and non-blocking I/O model. Additionally, its array of modular packages managed by npm facilitated astute development, and management capacities.
-<img width="162" alt="scr3" src="https://github.com/user-attachments/assets/2ac62ae8-18cb-4ca7-a85a-79233bfa46c6">
-<img width="162" alt="scr2" src="https://github.com/user-attachments/assets/ab017f33-1d10-409a-a223-54e58e7fc98f">
-<img width="207" alt="scr1" src="https://github.com/user-attachments/assets/bc4d3175-3eee-4d4a-ba2d-1cbf2166c36c">
+[![LinkedIn Post](https://img.shields.io/badge/-Project_Launch_Post-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/olayemi-adekogbe_ese-bata-where-matchless-craftmanship-meets-activity-7242337829517725696-qE5a)
+[![Live Demo](https://img.shields.io/badge/-Landing_Page-000?style=flat&logo=github&logoColor=white)](https://github.com/ZeroAddict/Ese-Bata-landing/)
+
+---
+
+## 📦 The Product
+
+**Ese Bata** is an e-commerce backend system for a shoe brand. Built to handle:
+
+- User authentication (signup/login)
+- Product catalog management (create, read, update, delete)
+- Secure data persistence
+
+**My Role:** Product Lead & Backend Developer  
+**Timeline:** 2024–2025  
+**Status:** Completed backend + landing page
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| Runtime | Node.js |
+| Framework | Express |
+| Database | MongoDB (NoSQL) |
+| Architecture | MVC (Models-Views-Controllers) |
+| Templating | EJS |
+
+---
+
+## 🚀 Key Features
+
+| Feature | Description |
+|---------|-------------|
+| User Authentication | Login/signup routes with controller handlers |
+| Product Management | Store, retrieve, update, delete product data |
+| Secure Data Storage | MongoDB document-based persistence |
+| Async Execution | Non-blocking I/O via Node.js event-driven model |
+
+---
+
+## 📂 Project Structure
+
+├── models/ # MongoDB schemas
+├── views/ # EJS templates
+├── controllers/ # Business logic
+├── routes/ # API endpoints
+└── package.json # Dependencies
+
+text
+
+---
+
+## 👥 Collaborators
+
+| Name | Role |
+|------|------|
+| Olayemi Adekogbe | Tech Lead | Product Manager | Owner
+| Doreen Ikilai | Team Member |
+| Ifeoluwa Adebayo | Team Member |
+| Favour | Team Member |
+| Wassim Haimoudi | Team Member |
+
+***Trello Board:*
+- [Trello (Portfolio)](https://trello.com/b/VP5kUhOm/portfolio)
+
+**Related Repos:**
+- [Backend (Primary)](https://github.com/Olyems/zuri-shoe-project)
+- [Landing Page](https://github.com/ZeroAddict/Ese-Bata-landing/)
+
+---
+
+## 🔧 Installation
+
+```bash
+# Clone the repo
+git clone [your-repo-url]
+
+# Install dependencies (see package.json)
+npm install
+
+# Run the server
+npm start
+Requires Node.js and MongoDB installed locally.
+
+📸 Screenshots
+https://github.com/user-attachments/assets/bc4d3175-3eee-4d4a-ba2d-1cbf2166c36c	https://github.com/user-attachments/assets/ab017f33-1d10-409a-a223-54e58e7fc98f	https://github.com/user-attachments/assets/2ac62ae8-18cb-4ca7-a85a-79233bfa46c6
+🧠 What I Learned (Product Takeaways)
+Lesson	Application
+Auth routes matter	Users need clear signup/login flows before they can buy
+Async ≠ automatic	Non-blocking I/O requires careful error handling
+MVC scales	Separating concerns made debugging 3x faster
+Team collaboration	Coordinated with 4 developers via GitHub
+🔗 Links
+LinkedIn Project Post
+
+Landing Page Repo
+
+My LinkedIn
+
+Built as part of a full-stack portfolio project. Not currently deployed live.
