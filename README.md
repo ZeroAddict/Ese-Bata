@@ -62,7 +62,7 @@ text
 
 | Name | Role |
 |------|------|
-| Olayemi Adekogbe | Tech Lead | Product Manager | Owner
+| Olayemi Adekogbe | Tech Lead • Product Manager • Owner
 | Doreen Ikilai | Team Member |
 | Ifeoluwa Adebayo | Team Member |
 | Favour | Team Member |
